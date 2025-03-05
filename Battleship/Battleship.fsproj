@@ -6,11 +6,12 @@
     <Name>Battleship</Name>
   </PropertyGroup>
   <ItemGroup>
-	  <Compile Include="Config.fs" />
-	  <Compile Include="Board.fs" />
-	  <Compile Include="Input.fs" />
-	  <Compile Include="Ship.fs" />
-	  <Compile Include="Game.fs" />
-	  <Compile Include="Program.fs" />
+    <Compile Include="Config.fs" />
+	  <Compile Include="Types.fs" />
+    <Compile Include="Board.fs" />
+    <Compile Include="Input.fs" />
+    <Compile Include="Ship.fs" />
+    <Compile Include="Game.fs" />
+    <Compile Include="Program.fs" />
   </ItemGroup>
 </Project>
