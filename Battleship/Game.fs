@@ -43,14 +43,14 @@ let rec gameLoop (shipCells: Set<int * int>) (guesses: Set<int * int>) (hits: Se
             | AlreadyGuessed ->
                 printfn "You already guessed that position. Try again!"
                 gameLoop shipCells guesses hits
-            | Hit _ ->
+            | Hit ->
                 printfn "Hit!"
                 // Update the guesses and hits sets
                 let newGuesses = guesses.Add pos
                 let newHits = hits.Add pos
                 let remainingShipCells = shipCells.Remove pos
                 gameLoop remainingShipCells newGuesses newHits
-            | Miss _ ->
+            | Miss ->
                 printfn "Miss!"
                 // Only updates the guesses set since it was a miss
                 let newGuesses = guesses.Add pos
